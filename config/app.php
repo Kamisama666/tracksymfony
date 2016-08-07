@@ -155,6 +155,8 @@ return [
 		TrackSymfony\Providers\AuthServiceProvider::class,
 		TrackSymfony\Providers\EventServiceProvider::class,
 		TrackSymfony\Providers\RouteServiceProvider::class,
+		TrackSymfony\Providers\GithubAPIProvider::class,
+		TrackSymfony\Providers\SymfonyProvider::class,
 
 		/**
 		 * External Service Providers...
