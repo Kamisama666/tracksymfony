@@ -7,11 +7,10 @@ class GithubAPIServiceTest extends TestCase {
 	 *
 	 * @return void
 	 */
-	public function testGetRepository() {
+	public function testGet() {
 
 		$github = new TrackSymfony\Services\GithubAPIService();
 		$response = $github->get('/repos/symfony/symfony');
 		$this->assertTrue($response->isSuccesful());
-		$this->assertTrue($response->getContent()['name'] === 'symfony');
 	}
 }
